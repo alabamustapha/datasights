@@ -1,7 +1,7 @@
 // HERO-BOX MANGER
 
 .hero-box{
-    background-image: linear-gradient(0deg, $light, $light), url('/images/hero.png');
+    background-image: linear-gradient(0deg, rgba($light, .75), rgba($light, 75)), url('/images/hero.png');
     height: 70vh;
     background-size: cover;
     background-repeat: no-repeat;
@@ -16,6 +16,7 @@
 
         &--sub{
             font-size: $text-lg;
+            font-weight: 300;
         }
 
         &--ctx{
@@ -56,7 +57,7 @@
         }
 
         &:hover::after{
-            background-color: darken($secondary, 10%);
+            background-color: darken($primary, 10%);
         }
 
         &::after{
@@ -69,7 +70,7 @@
             display: block;
             width: 6rem;
             height: 6rem;
-            background: $secondary;
+            background: $primary;
             border-radius: 50%;
             transition: all 200ms;
         }
@@ -84,7 +85,7 @@
             display: block;
             width: 6rem;
             height: 6rem;
-            background: $secondary;
+            background: $primary;
             border-radius: 50%;
             animation: pulse-border 1500ms ease-out infinite;
         }

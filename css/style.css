@@ -7202,7 +7202,7 @@ a:hover {
   .header-primary {
     font-size: 7rem; }
     .header-primary--2 {
-      color: #5868E8; }
+      color: #7F20CB; }
   .header-secondary {
     font-size: 4.7rem; }
 
@@ -7230,7 +7230,7 @@ a:hover {
       left: 50%; }
 
 .hero-box {
-  background-image: linear-gradient(0deg, #FAFAFA, #FAFAFA), url("/images/hero.png");
+  background-image: linear-gradient(0deg, rgba(250, 250, 250, 0.75), #fafafa), url("/images/hero.png");
   height: 70vh;
   background-size: cover;
   background-repeat: no-repeat;
@@ -7245,7 +7245,8 @@ a:hover {
     width: 60%;
     font-size: 1.8rem; }
     .hero-box__text--sub {
-      font-size: 1.8rem; }
+      font-size: 1.8rem;
+      font-weight: 300; }
     .hero-box__text--ctx {
       display: block;
       font-weight: 600; }
@@ -7279,7 +7280,7 @@ a:hover {
       border-top: 14px solid transparent;
       border-bottom: 14px solid transparent; }
     .hero-box__play:hover::after {
-      background-color: #2b3fe2; }
+      background-color: #63199f; }
     .hero-box__play::after {
       content: "";
       position: absolute;
@@ -7290,7 +7291,7 @@ a:hover {
       display: block;
       width: 6rem;
       height: 6rem;
-      background: #5868E8;
+      background: #7F20CB;
       border-radius: 50%;
       transition: all 200ms; }
     .hero-box__play::before {
@@ -7303,7 +7304,7 @@ a:hover {
       display: block;
       width: 6rem;
       height: 6rem;
-      background: #5868E8;
+      background: #7F20CB;
       border-radius: 50%;
       animation: pulse-border 1500ms ease-out infinite; }
 
