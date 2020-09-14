@@ -7204,13 +7204,17 @@ a:hover {
     font-size: 1.4rem;
     font-weight: 500;
     text-transform: uppercase;
-    transition: all .2s linear; }
+    transition: all .2s linear;
+    position: relative; }
   .navbar .nav-link:hover, .navbar .nav-link:active {
     color: #242242; }
-  .navbar .nav-item:hover .navbar .nav-link::after {
+  .navbar .nav-link:hover::after {
     content: " ";
     display: block;
     width: .6rem;
     height: .6rem;
-    border-radius: 100%;
-    background-color: red; }
+    border-radius: 50%;
+    background-color: red;
+    position: absolute;
+    bottom: 0;
+    left: 50%; }
