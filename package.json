@@ -1,0 +1,23 @@
+{
+  "name": "datasights",
+  "version": "1.0.0",
+  "description": "Datasight Landing page",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "node-sass scss/main.scss css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alabamustapha/datasights.git"
+  },
+  "keywords": [
+    "Datasight"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alabamustapha/datasights/issues"
+  },
+  "homepage": "https://github.com/alabamustapha/datasights#readme"
+}
