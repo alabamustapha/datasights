@@ -1,0 +1,107 @@
+// HERO-BOX MANGER
+
+.hero-box{
+    background-image: linear-gradient(0deg, $light, $light), url('/images/hero.png');
+    height: 70vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    width: 100%;
+
+    &__text{
+        @include absCenter;
+        display: block;
+        width: 60%;
+        font-size: $text-lg;
+
+        &--sub{
+            font-size: $text-lg;
+        }
+
+        &--ctx{
+            display: block;
+            font-weight: 600;
+        }
+    }
+
+    &__info{
+        color: $secondary;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 6rem;
+    }
+
+    &__play{
+        box-sizing: content-box;
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        background: $secondary;
+        border-radius: 50%;
+        position: relative;
+        margin-left: 4rem;
+
+        & span{
+            @include absCenter;
+            margin-left: .3rem;
+            display: block;
+            z-index: 3;
+            width: 0;
+            height: 0;
+            border-left: 22px solid #fff;
+            border-top: 14px solid transparent;
+            border-bottom: 14px solid transparent;
+        }
+
+        &:hover::after{
+            background-color: darken($secondary, 10%);
+        }
+
+        &::after{
+            content: "";
+            position: absolute;
+            z-index: 1;
+            left: 50%;
+            top: 50%;
+            transform: translateX(-50%) translateY(-50%);
+            display: block;
+            width: 6rem;
+            height: 6rem;
+            background: $secondary;
+            border-radius: 50%;
+            transition: all 200ms;
+        }
+
+        &::before{
+            content: "";
+            position: absolute;
+            z-index: 0;
+            left: 50%;
+            top: 50%;
+            transform: translateX(-50%) translateY(-50%);
+            display: block;
+            width: 6rem;
+            height: 6rem;
+            background: $secondary;
+            border-radius: 50%;
+            animation: pulse-border 1500ms ease-out infinite;
+        }
+    }
+
+}
+
+
+
+@keyframes pulse-border {
+    0% {
+      transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
+      opacity: 1;
+    }
+    100% {
+      transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.5);
+      opacity: 0;
+    }
+  }
+  

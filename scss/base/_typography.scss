@@ -1,4 +1,4 @@
-.body{
+body{
     font-family: 'Raleway', sans-serif;
 }
 
@@ -21,5 +21,23 @@ h3,h4,h5,
 a{
     &:hover{
         text-decoration: none;
+    }
+}
+
+// HEADR TYPOGRAPHY
+.header{
+    font-weight: 600;
+    color: $dark;
+
+    &-primary{
+        font-size: $h1;
+        
+        &--2{
+            color: $secondary;
+        }
+    }
+
+    &-secondary{
+        font-size: $h2;
     }
 }

@@ -19,21 +19,20 @@
             &:hover,
             &:active{
                 color: $dark;
+
+                &::after{      
+                    content: " ";
+                    display: block;
+                    width: .6rem;
+                    height: .6rem;
+                    border-radius: 50%;
+                    background-color: $dark;
+                    position: absolute;
+                    bottom: 0;
+                    left: 50%;
+                }
             }
         }
 
-        &-link:hover{
-            &::after{      
-                content: " ";
-                display: block;
-                width: .6rem;
-                height: .6rem;
-                border-radius: 50%;
-                background-color: red;
-                position: absolute;
-                bottom: 0;
-                left: 50%;
-            }
-        }
     }
 }
