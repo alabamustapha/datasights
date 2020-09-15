@@ -24,16 +24,16 @@
                       <a class="nav-link" href="index.html">Home </a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#">About</a>
+                      <a class="nav-link" href="#about">About</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#">Services</a>
+                      <a class="nav-link" href="#services">Services</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#">Meet the Team</a>
+                      <a class="nav-link" href="#meet">Meet the Team</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#">Contact</a>
+                      <a class="nav-link" href="#contact">Contact</a>
                     </li>
                   </ul>
                 </div>
@@ -51,7 +51,7 @@
             <div class="hero-box__info mt-5">
               Learn how it works
              <a href="" class="hero-box__play">
-              <svg width="20" height="20" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg width="28" height="28" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M3.0003 10.6148C2.90413 10.6148 2.8119 10.5766 2.7439 10.5086C2.6759 10.4406 2.6377 10.3484 2.6377 10.2522V2.27492C2.63772 2.21124 2.65452 2.1487 2.68639 2.09358C2.71826 2.03846 2.76408 1.9927 2.81925 1.96091C2.87442 1.92912 2.93698 1.91241 3.00065 1.91248C3.06433 1.91254 3.12686 1.92937 3.18196 1.96126L10.0714 5.9499C10.1264 5.98178 10.172 6.02753 10.2037 6.08257C10.2354 6.13762 10.2521 6.20003 10.2521 6.26355C10.2521 6.32708 10.2354 6.38949 10.2037 6.44453C10.172 6.49958 10.1264 6.54533 10.0714 6.57721L3.18196 10.5658C3.12678 10.5979 3.06411 10.6148 3.0003 10.6148V10.6148Z" fill="white"></path>
               </svg>
              </a>
@@ -63,7 +63,7 @@
     <main class="main">
 
       <!-- Section About -->
-        <section class="section-about">
+        <section class="section-about" id="about">
             <div class="container">
                 <h2 class="heading-secondary text-white"> Who we are</h2>
                   <p class='section-about__info py-5'>
@@ -117,29 +117,41 @@
       <!-- End of Section About -->
 
       <!-- Section Services -->
-        <section class="section-services">
+        <section class="section-services" id="services">
             <div class="container">
               <h2 class="heading-secondary text-center"> Core services</h2>
               <p class="section__info text-center py-5 mx-auto">At DataSights Nigeria, we care so much about efficiency and scalability as much as our clients do. Effectiveness is at the center of everything we do.</p>
               
               <!-- Timeline Content -->
               <div class="section-services__details">
-                <div class="section-services__contents">
-                  <div class="section-services__content-info">
+                <div class="section-services__contents py-5">
+                  <div class="section-services__items">
+                    <span> 01 </span>
+                  <div class="section-services__contents-info left">
                     <h4>Data Preparation and Ingestion</h4>
                     <p>We use cutting-edge tools for data preparation, harmonization, and management. At DataSights Nigeria, our data ingestion service ensures that the data is gathered, imported, transferred, loaded, and processed perfectly for instant usage. The data can also be stored in a database for future use.</p>
                   </div>
-                  <div class="section-services__content-info">
+                  </div>
+                 <div class="section-services__items">
+                  <span> 02 </span>
+                  <div class="section-services__contents-info right">
                     <h4>Statistical Modelling and Algorithm Development</h4>
                     <p>We leverage Data Science, Machine Learning and Statistical Methodologies or a combination of the three to create analytical models on data.</p>
                   </div>
-                  <div class="section-services__content-info">
-                    <h4>Insight Generation & Deployment</h4>
-                    <p> We take an industry-standard and professional approach to insight generation and our insight deployment service offering focuses on applying actionable business insights into decision-making process and automation.</p>
+                 </div>
+                  <div class="section-services__items">
+                    <span> 03 </span>
+                    <div class="section-services__contents-info left">
+                      <h4>Insight Generation & Deployment</h4>
+                      <p> We take an industry-standard and professional approach to insight generation and our insight deployment service offering focuses on applying actionable business insights into decision-making process and automation.</p>
+                    </div>
                   </div>
-                  <div class="section-services__content-info">
-                    <h4>Data Science Training</h4>
-                    <p>We offer Data Science Training to businesses, and organizations of all kind. Don’t let buzz words overwhelm you.</p>
+                  <div class="section-services__items">
+                    <span> 04 </span>
+                    <div class="section-services__contents-info right">
+                      <h4>Data Science Training</h4>
+                      <p>We offer Data Science Training to businesses, and organizations of all kind. Don’t let buzz words overwhelm you.</p>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -149,7 +161,8 @@
       <!-- End of Section Services -->
 
       <!-- Section Meet -->
-        <section class="section-meet">
+        <section class="section-meet" 
+        id="meet">
           <div class="container">
             <h2 class="heading-secondary text-center"> Meet the Team</h2>
             <p class="section__info text-center py-5 mx-auto">
@@ -208,7 +221,7 @@
       <!-- End of Section Meet -->
 
       <!-- Section Contact -->
-      <section class="section-contact">
+      <section class="section-contact" id="contact">
         <div class="container">
           <h2 class="heading-secondary text-center text-white"> Contact us </h2>
               <p class="section-contact__info text-center mx-auto">
@@ -278,17 +291,23 @@
               <a class="navbar-brand" href="#"><img src="images/logo.png" alt="Logo" height="40"/></a>
               <p class="py-5"> We understand the science and art of data, and we can help you make the best out of it. Get in touch with us today.</p>
               <div class="footer-nav__icons">
-                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M10.001 0.00195312C4.47895 0.00195312 0.00195312 4.47895 0.00195312 10.001C0.00195312 14.991 3.65795 19.127 8.43895 19.88V12.892H5.89895V10.001H8.43895V7.79795C8.43895 5.28995 9.93195 3.90695 12.215 3.90695C13.309 3.90695 14.455 4.10195 14.455 4.10195V6.56095H13.191C11.951 6.56095 11.563 7.33295 11.563 8.12395V9.99895H14.334L13.891 12.89H11.563V19.878C16.344 19.129 20 14.992 20 10.001C20 4.47895 15.523 0.00195312 10.001 0.00195312Z" fill="#9E9E9E"/>
+                <a href="#">
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10.001 0.00195312C4.47895 0.00195312 0.00195312 4.47895 0.00195312 10.001C0.00195312 14.991 3.65795 19.127 8.43895 19.88V12.892H5.89895V10.001H8.43895V7.79795C8.43895 5.28995 9.93195 3.90695 12.215 3.90695C13.309 3.90695 14.455 4.10195 14.455 4.10195V6.56095H13.191C11.951 6.56095 11.563 7.33295 11.563 8.12395V9.99895H14.334L13.891 12.89H11.563V19.878C16.344 19.129 20 14.992 20 10.001C20 4.47895 15.523 0.00195312 10.001 0.00195312Z" fill="#9E9E9E"/>
                   </svg>
+                </a>
                   
+                <a href="#">
                   <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M10.0001 6.87579C8.2798 6.87579 6.87589 8.2797 6.87589 10C6.87589 11.7203 8.2798 13.1242 10.0001 13.1242C11.7204 13.1242 13.1243 11.7203 13.1243 10C13.1243 8.2797 11.7204 6.87579 10.0001 6.87579ZM19.3704 10C19.3704 8.70626 19.3821 7.42423 19.3095 6.13283C19.2368 4.63283 18.8946 3.30158 17.7978 2.2047C16.6985 1.10548 15.3696 0.765639 13.8696 0.692982C12.5759 0.620326 11.2939 0.632045 10.0025 0.632045C8.7087 0.632045 7.42667 0.620326 6.13527 0.692982C4.63527 0.765639 3.30402 1.10783 2.20714 2.2047C1.10792 3.30392 0.76808 4.63283 0.695424 6.13283C0.622767 7.42658 0.634486 8.70861 0.634486 10C0.634486 11.2914 0.622767 12.5758 0.695424 13.8672C0.76808 15.3672 1.11027 16.6985 2.20714 17.7953C3.30636 18.8945 4.63527 19.2344 6.13527 19.307C7.42902 19.3797 8.71105 19.368 10.0025 19.368C11.2962 19.368 12.5782 19.3797 13.8696 19.307C15.3696 19.2344 16.7009 18.8922 17.7978 17.7953C18.897 16.6961 19.2368 15.3672 19.3095 13.8672C19.3845 12.5758 19.3704 11.2938 19.3704 10ZM10.0001 14.807C7.33995 14.807 5.19308 12.6602 5.19308 10C5.19308 7.33986 7.33995 5.19298 10.0001 5.19298C12.6603 5.19298 14.8071 7.33986 14.8071 10C14.8071 12.6602 12.6603 14.807 10.0001 14.807ZM15.004 6.11876C14.3829 6.11876 13.8814 5.6172 13.8814 4.99611C13.8814 4.37501 14.3829 3.87345 15.004 3.87345C15.6251 3.87345 16.1267 4.37501 16.1267 4.99611C16.1269 5.14359 16.0979 5.28966 16.0416 5.42595C15.9852 5.56224 15.9026 5.68607 15.7983 5.79036C15.694 5.89464 15.5701 5.97733 15.4339 6.03368C15.2976 6.09004 15.1515 6.11895 15.004 6.11876Z" fill="#9E9E9E"/>
                   </svg>
+                </a>
 
+                <a href="#">
                   <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M10.9906 0.788575C5.19453 0.786231 0.5 5.47842 0.5 11.2698C0.5 15.8495 3.43672 19.7425 7.52656 21.1722C8.07734 21.3105 7.99297 20.919 7.99297 20.6519V18.8355C4.8125 19.2081 4.68359 17.1034 4.47031 16.7519C4.03906 16.0159 3.01953 15.8284 3.32422 15.4769C4.04844 15.1042 4.78672 15.5706 5.64219 16.8339C6.26094 17.7503 7.46797 17.5956 8.07969 17.4433C8.21328 16.8925 8.49922 16.4003 8.89297 16.0183C5.59766 15.4276 4.22422 13.4167 4.22422 11.0261C4.22422 9.86592 4.60625 8.79951 5.35625 7.93936C4.87812 6.52139 5.40078 5.30732 5.47109 5.12686C6.83281 5.00498 8.24844 6.10186 8.35859 6.18858C9.13203 5.97998 10.0156 5.86983 11.0047 5.86983C11.9984 5.86983 12.8844 5.98467 13.6648 6.19561C13.9297 5.99404 15.2422 5.05186 16.5078 5.1667C16.5758 5.34717 17.0867 6.53311 16.6367 7.93233C17.3961 8.79483 17.7828 9.87061 17.7828 11.0331C17.7828 13.4284 16.4 15.4417 13.0953 16.023C13.3784 16.3013 13.6031 16.6333 13.7564 16.9995C13.9098 17.3657 13.9886 17.7588 13.9883 18.1558V20.7925C14.007 21.0034 13.9883 21.212 14.3398 21.212C18.4906 19.8128 21.4789 15.8917 21.4789 11.2722C21.4789 5.47842 16.782 0.788575 10.9906 0.788575Z" fill="#9E9E9E"/>
                   </svg>
+                </a>
                       
               </div>
             </div>
@@ -298,16 +317,16 @@
                   <a class="nav-link" href="index.html">Home </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">About</a>
+                  <a class="nav-link" href="#about">About</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Services</a>
+                  <a class="nav-link" href="#services">Services</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Meet the Team</a>
+                  <a class="nav-link" href="#meet">Meet the Team</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Contact</a>
+                  <a class="nav-link" href="#contact">Contact</a>
                 </li>
               </ul>
             </div>

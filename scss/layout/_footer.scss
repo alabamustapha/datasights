@@ -3,11 +3,17 @@
 .footer{
     &-nav{
         &__icons{
-            svg{
+            a{
                 display: inline-block;
+                transition: all .3s linear;
                 
                 &:not(:last-child){
                     margin-right: 3rem;
+                }
+
+                &:hover svg path{
+                    fill: $dark;
+                   
                 }
             }
         }
