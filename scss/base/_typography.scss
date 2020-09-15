@@ -7,17 +7,6 @@ p{
     line-height: 1.7;
 }
 
-// h1,h2,
-// .h1,.h2{
-//     font-weight: 700;
-//     color: $dark;
-// }
-// h3,h4,h5,
-// .h3,.h4,.h5{
-//     font-weight: 600;
-//     color: $dark;
-// }
-
 a{
     &:hover{
         text-decoration: none;
@@ -25,14 +14,14 @@ a{
 }
 
 // HEADER TYPOGRAPHY
-.header{
+.heading{
     font-weight: 600;
     color: $dark;
 
     &-primary{
         font-size: $h1;
         
-        &--2{
+        span{
             color: $primary;
         }
     }

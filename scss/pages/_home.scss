@@ -10,9 +10,21 @@
         @include bgSection($white);
         color: $dark-2;
     }
+
+    &-contact{
+        @include bgSection($dark);
+        color: $light;
+    }
 }
 
 .footer{
-    @include bgSection($dark);
-    color: $light;
+    &-nav{
+        @include bgSection($light);
+        color: $dark-2;
+    }
+
+    &-copy{
+        @include bgSection($dark);
+        color: $white;
+    }
 }

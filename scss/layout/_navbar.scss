@@ -1,24 +1,45 @@
 // NAVIGATION LAYOUT
 
 .navbar{
-    background-color: $light;
-    padding: 1.2rem;
+    background-color: rgba($light, .6);
+    padding: 1.5rem 0;
+    backdrop-filter: blur(5rem);
+
+    @include respond(phone){
+        padding: 1.5rem 2rem;
+    }
 
     .nav{
+        &-item{
+            &:not(:last-child){
+                padding-right: 1.8rem;
+
+                @include respond(tab-portrait){
+                    padding-bottom: 1.8rem;
+                }
+            }
+        }
+
         &-link{
+
             &:link,
             &:visited{
                 color: $gray-2;
-                font-size: $text-sm;
+                font-size: $text-md;
                 font-weight: 500;
                 text-transform: lowercase;
                 transition: all .2s linear;
                 position: relative;
+
+                @include respond(tab-portrait){
+                    font-size: 2rem;
+                }
+
             }
     
             &:hover,
             &:active{
-                color: $dark;
+                color: $dark !important;
 
                 &::after{      
                     content: " ";
@@ -37,8 +58,9 @@
     }
 
     &-toggler{
-        font-size: 3rem;
-        border: 3px solid $dark;
-        border-radius: 1.25rem;
+        font-size: 2.2rem;
+        border: 2px solid $dark;
+        border-radius: .8rem;
+        border-color: $primary !important;
     }
 }
