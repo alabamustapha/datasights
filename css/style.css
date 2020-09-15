@@ -7417,6 +7417,9 @@ a {
   color: #d4d4d4; }
 
 .section-services {
+  background-image: url("../images/big-circle.png"), url("../images/small-circle.png");
+  background-position: -50% 0, 120% 100%;
+  background-repeat: no-repeat, no-repeat;
   padding: 10rem 0;
   background-color: #fafafa;
   color: #242242; }

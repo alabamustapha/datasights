@@ -6,6 +6,16 @@
     <title>DataSight</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
+
+<style>
+  .modal-content{
+    background-color: transparent;
+  }
+  .modal-body iframe{
+    width: 100%;
+    background-color: transparent;
+  }
+</style>
 <body>
     <header class="header">
 
@@ -63,9 +73,12 @@
 
     <!-- modal to show youtube -->
     <div class="modal fade" id="youtubeModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-xl modal-dialog-centered justify-content-center">
-      
-            <div id="player"></div>      
+      <div class="modal-dialog modal-xl modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-body">
+              <div id="player"></div>      
+            </div>
+          </div>
         
       </div>
     </div>
@@ -341,18 +354,13 @@
     <!-- custom -->
 
     <script>
-    
-        // checking window width and height and resize youtube frame
 
-        var frameWidth = Math.round(window.screen.width * 0.85);
-        var frameHeight = Math.round(window.screen.height * 0.5);
+
+        var frameHeight = Math.round(window.screen.height * 0.5);   
+        // checking window width and height and resize youtube frame
+        var ym =  $('#youtubeModal');       
+        // console.log(frameWidth, frameHeight);
         
-        window.addEventListener('resize', ()=> {
-          frameWidth = Math.round(window.screen.width * 0.85);
-          frameHeight = Math.round(window.screen.height * 0.5);
-          console.log(frameWidth, frameHeight);
-          
-        })
 
        // 2. This code loads the IFrame Player API code asynchronously.
        var tag = document.createElement('script');
@@ -367,7 +375,7 @@
         function onYouTubeIframeAPIReady() {
           player = new YT.Player('player', {
             height: frameHeight,
-            width: frameWidth,
+            // width: 320,
             // pass the video id for the youtube
             videoId: 'X3paOmcrTjQ',
             events: {
@@ -379,13 +387,15 @@
 
         // this function triggers the  player to play when the modal opens
         $('.hero-box__play').click(function () {
+          ym.modal('show');
+          
+          // get the modal width on show
         
-          $('#youtubeModal').modal('show');
           player.playVideo();
         });
 
         // this closes the modal
-        $('#youtubeModal').on('hide.bs.modal', function () {
+        ym.on('hide.bs.modal', function () {
           console.log('player closed');
           player.stopVideo();
         });
