@@ -7239,7 +7239,7 @@ a:hover {
     font-size: 1.8rem; }
     @media (max-width: 37.5em) {
       .hero-box__text {
-        width: 100%; } }
+        width: 90%; } }
     .hero-box__text--sub {
       color: #242242;
       font-size: 1.8rem;

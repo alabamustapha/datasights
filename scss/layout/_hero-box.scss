@@ -12,6 +12,7 @@
         height: 100vh;
     }
 
+
     &__text{
         @include absCenter;
         display: block;
@@ -19,7 +20,7 @@
         font-size: $text-lg;
 
         @include respond(phone){
-            width: 100%;
+            width: 90%;
         }
         
         &--sub{
