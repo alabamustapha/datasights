@@ -7421,6 +7421,9 @@ a {
     margin: 0 auto;
     font-weight: 400; }
 
+.section-contact__form iframe {
+  height: 25rem; }
+
 .footer-nav__icons a {
   display: inline-block;
   transition: all .3s linear; }
@@ -7466,6 +7469,13 @@ a {
   border-radius: 5rem;
   margin-top: 2rem; }
 
+.modal-content {
+  background-color: transparent; }
+
+.modal-body iframe {
+  width: 100%;
+  background-color: transparent; }
+
 .section__info {
   width: 80%;
   font-size: 1.8rem; }
@@ -7479,6 +7489,9 @@ a {
   color: #d4d4d4; }
 
 .section-services {
+  background-image: url("../images/big-circle.png"), url("../images/small-circle.png");
+  background-position: -50% 0, 120% 100%;
+  background-repeat: no-repeat, no-repeat;
   padding: 10rem 0;
   background-color: #fafafa;
   color: #242242; }

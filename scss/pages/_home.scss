@@ -17,6 +17,9 @@
     }
 
     &-services{
+        background-image: url('../images/big-circle.png'), url('../images/small-circle.png');
+        background-position:-50% 0, 120% 100%;
+        background-repeat: no-repeat, no-repeat;
         @include bgSection($accent);
         color: $dark
     }
