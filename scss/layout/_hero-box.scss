@@ -8,10 +8,6 @@
     position: relative;
     width: 100%;
 
-    @include respond(tab-portrait){
-        height: 100vh;
-    }
-
 
     &__text{
         @include absCenter;

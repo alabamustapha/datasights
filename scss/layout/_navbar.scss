@@ -35,4 +35,10 @@
         }
 
     }
+
+    &-toggler{
+        font-size: 3rem;
+        border: 3px solid $dark;
+        border-radius: 1.25rem;
+    }
 }
