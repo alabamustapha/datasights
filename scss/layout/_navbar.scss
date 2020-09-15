@@ -1,7 +1,8 @@
 // NAVIGATION LAYOUT
 
 .navbar{
-    background-color: $light;
+    background-color: rgba($white, .8);
+    backdrop-filter: blur(18px);
     padding: 1.2rem;
 
     .nav{
