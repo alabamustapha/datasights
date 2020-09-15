@@ -7323,12 +7323,20 @@ a:hover {
     .section-about__info {
       width: 90%; } }
 
-.section-meet__info {
-  width: 80%;
-  font-size: 1.8rem; }
-  @media (max-width: 37.5em) {
-    .section-meet__info {
-      width: 100%; } }
+.section-services_details {
+  width: 100%;
+  margin: 10px 9px 30px 0px;
+  padding-top: 50px;
+  position: relative; }
+  .section-services_details::before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 3px;
+    height: 92%;
+    background: red; }
 
 .figure-caption--tag {
   font-weight: 500;
@@ -7393,10 +7401,22 @@ a:hover {
   border-radius: 5rem;
   margin-top: 2rem; }
 
+.section__info {
+  width: 80%;
+  font-size: 1.8rem; }
+  @media (max-width: 37.5em) {
+    .section__info {
+      width: 100%; } }
+
 .section-about {
   padding: 10rem 0;
   background-color: #242242;
   color: #FAFAFA; }
+
+.section-services {
+  padding: 10rem 0;
+  background-color: #FAFAFA;
+  color: #242242; }
 
 .section-meet {
   padding: 10rem 0;
@@ -7406,7 +7426,7 @@ a:hover {
 .section-contact {
   padding: 10rem 0;
   background-color: #242242;
-  color: #FAFAFA; }
+  color: #FFFFFF; }
 
 .footer-nav {
   padding: 10rem 0;

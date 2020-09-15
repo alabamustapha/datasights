@@ -1,9 +1,24 @@
 // SECTION ABOUT
 
 .section{
+
+    &__info{
+        width: 80%;
+        font-size: $text-lg;
+
+        @include respond(phone){
+            width: 100%;
+        }
+    }
+    
     &-about{
         @include bgSection($dark);
         color: $light;
+    }
+
+    &-services{
+        @include bgSection($light);
+        color: $dark
     }
 
     &-meet{
@@ -13,7 +28,7 @@
 
     &-contact{
         @include bgSection($dark);
-        color: $light;
+        color: $white;
     }
 }
 

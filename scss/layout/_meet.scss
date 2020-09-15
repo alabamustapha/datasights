@@ -1,17 +1,5 @@
 // SECTION MEET
 
-.section-meet{
-
-    &__info{
-        width: 80%;
-        font-size: $text-lg;
-
-        @include respond(phone){
-            width: 100%;
-        }
-    }
-}
-
 .figure{
 
     &-caption--tag{
