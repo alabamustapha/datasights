@@ -1,18 +1,45 @@
 // SECTION ABOUT
 
 .section{
+
+    &__info{
+        width: 80%;
+        font-size: $text-lg;
+
+        @include respond(phone){
+            width: 100%;
+        }
+    }
+    
     &-about{
         @include bgSection($dark);
         color: $light;
+    }
+
+    &-services{
+        @include bgSection($light);
+        color: $dark
     }
 
     &-meet{
         @include bgSection($white);
         color: $dark-2;
     }
+
+    &-contact{
+        @include bgSection($dark);
+        color: $white;
+    }
 }
 
 .footer{
-    @include bgSection($dark);
-    color: $light;
+    &-nav{
+        @include bgSection($light);
+        color: $dark-2;
+    }
+
+    &-copy{
+        @include bgSection($dark);
+        color: $white;
+    }
 }

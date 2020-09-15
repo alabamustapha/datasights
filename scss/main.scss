@@ -1,17 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap');
 
+
 @import 'abstract/variables';
+@import 'abstract/mixins';
+@import 'base/base';
 @import '../node_modules/bootstrap/scss/bootstrap.scss';
 
-@import 'abstract/mixins';
 
-@import 'base/base';
+
 @import 'base/typography';
 
 @import 'layout/navbar';
 @import 'layout/hero-box';
 @import 'layout/about';
+@import 'layout/services';
 @import 'layout/meet';
+@import 'layout/contact';
 @import 'layout/footer';
 
 @import 'component/card';
