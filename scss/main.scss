@@ -8,6 +8,13 @@
 @import 'base/base';
 @import 'base/typography';
 
-
 @import 'layout/navbar';
 @import 'layout/hero-box';
+@import 'layout/about';
+@import 'layout/meet';
+@import 'layout/footer';
+
+@import 'component/card';
+@import 'component/form';
+
+@import 'pages/home';

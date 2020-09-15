@@ -1,0 +1,34 @@
+// FORM
+
+.form{
+    &-group:not(:last-child){
+        margin-bottom: 1.2rem;
+    }
+
+    input,
+    textarea{
+        font-weight: 400;
+        font-size: $text-sm;
+        background-color: transparent;
+        border-radius: 5px;
+
+        &::placeholder{
+            color: $light;
+        }
+
+        &:focus{
+            background-color: transparent;
+            color: $light;
+        }
+    }
+    input{
+        padding: 1.6rem 1rem;
+    }
+    .btn{
+        padding: 1rem 3rem;
+        font-size: $text-sm;
+        font-weight: 500;
+        border-radius: 5rem;
+        margin-top: 2rem;
+    }
+}

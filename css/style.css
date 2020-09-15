@@ -7180,18 +7180,8 @@ body {
   font-family: 'Raleway', sans-serif; }
 
 p {
-  font-size: 1rem;
-  color: #242242e6; }
-
-h1, h2,
-.h1, .h2 {
-  font-weight: 700;
-  color: #242242; }
-
-h3, h4, h5,
-.h3, .h4, .h5 {
-  font-weight: 600;
-  color: #242242; }
+  font-size: 1.4rem;
+  line-height: 1.7; }
 
 a:hover {
   text-decoration: none; }
@@ -7213,7 +7203,7 @@ a:hover {
     color: #4F4F4F;
     font-size: 1.4rem;
     font-weight: 500;
-    text-transform: uppercase;
+    text-transform: lowercase;
     transition: all .2s linear;
     position: relative; }
   .navbar .nav-link:hover, .navbar .nav-link:active {
@@ -7230,12 +7220,15 @@ a:hover {
       left: 50%; }
 
 .hero-box {
-  background-image: linear-gradient(0deg, rgba(250, 250, 250, 0.75), #fafafa), url("/images/hero.png");
+  background-image: linear-gradient(0deg, rgba(250, 250, 250, 0.9), rgba(250, 250, 250, 0.9)), url("/images/hero.png");
   height: 80vh;
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
   width: 100%; }
+  @media (max-width: 56.25em) {
+    .hero-box {
+      height: 100vh; } }
   .hero-box__text {
     position: absolute;
     top: 50%;
@@ -7244,6 +7237,9 @@ a:hover {
     display: block;
     width: 60%;
     font-size: 1.8rem; }
+    @media (max-width: 37.5em) {
+      .hero-box__text {
+        width: 100%; } }
     .hero-box__text--sub {
       color: #242242;
       font-size: 1.8rem;
@@ -7267,19 +7263,13 @@ a:hover {
     border-radius: 50%;
     position: relative;
     margin-left: 4rem; }
-    .hero-box__play span {
+    .hero-box__play svg {
       position: absolute;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      margin-left: .3rem;
-      display: block;
       z-index: 3;
-      width: 0;
-      height: 0;
-      border-left: 22px solid #fff;
-      border-top: 14px solid transparent;
-      border-bottom: 14px solid transparent; }
+      margin-left: .3rem; }
     .hero-box__play:hover::after {
       background-color: #63199f; }
     .hero-box__play::after {
@@ -7316,3 +7306,96 @@ a:hover {
   100% {
     transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.5);
     opacity: 0; } }
+
+.section-about__info {
+  width: 60%;
+  font-size: 1.6rem; }
+  @media (max-width: 37.5em) {
+    .section-about__info {
+      width: 100%; } }
+  @media (max-width: 56.25em) {
+    .section-about__info {
+      width: 90%; } }
+  @media (max-width: 75em) {
+    .section-about__info {
+      width: 90%; } }
+
+.section-meet__info {
+  width: 80%;
+  font-size: 1.8rem; }
+  @media (max-width: 37.5em) {
+    .section-meet__info {
+      width: 100%; } }
+
+.figure-caption--tag {
+  font-weight: 500;
+  color: #242242; }
+  .figure-caption--tag span {
+    color: #242242e6;
+    font-weight: 400; }
+
+.footer__info {
+  width: 80%; }
+  @media (max-width: 37.5em) {
+    .footer__info {
+      width: 100%; } }
+
+.footer-details {
+  padding-top: 5rem;
+  padding-bottom: 3rem; }
+  .footer-details__address {
+    width: 85%;
+    margin: 0 auto;
+    font-weight: 400; }
+
+.card {
+  padding: 2rem;
+  border-radius: .8rem; }
+  .card-title {
+    font-size: 2.5rem;
+    color: #242242; }
+  .card-text {
+    color: #242242e6;
+    font-size: 1.4rem; }
+
+.form-group:not(:last-child) {
+  margin-bottom: 1.2rem; }
+
+.form input,
+.form textarea {
+  font-weight: 400;
+  font-size: 1.4rem;
+  background-color: transparent;
+  border-radius: 5px; }
+  .form input::placeholder,
+  .form textarea::placeholder {
+    color: #FAFAFA; }
+  .form input:focus,
+  .form textarea:focus {
+    background-color: transparent;
+    color: #FAFAFA; }
+
+.form input {
+  padding: 1.6rem 1rem; }
+
+.form .btn {
+  padding: 1rem 3rem;
+  font-size: 1.4rem;
+  font-weight: 500;
+  border-radius: 5rem;
+  margin-top: 2rem; }
+
+.section-about {
+  padding: 10rem 0;
+  background-color: #242242;
+  color: #FAFAFA; }
+
+.section-meet {
+  padding: 10rem 0;
+  background-color: #FFFFFF;
+  color: #242242e6; }
+
+.footer {
+  padding: 10rem 0;
+  background-color: #242242;
+  color: #FAFAFA; }

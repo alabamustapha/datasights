@@ -1,0 +1,18 @@
+// SECTION ABOUT
+
+.section{
+    &-about{
+        @include bgSection($dark);
+        color: $light;
+    }
+
+    &-meet{
+        @include bgSection($white);
+        color: $dark-2;
+    }
+}
+
+.footer{
+    @include bgSection($dark);
+    color: $light;
+}

@@ -1,0 +1,23 @@
+// FOOTER
+
+.footer{
+
+    &__info{
+        width: 80%;
+
+        @include respond(phone){
+            width: 100%;
+        }
+    }
+
+    &-details{
+        padding-top: 5rem;
+        padding-bottom: 3rem;
+
+        &__address{
+            width: 85%;
+            margin: 0 auto;
+            font-weight: 400;
+        }
+    }
+}

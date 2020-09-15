@@ -9,6 +9,7 @@
 </head>
 <body>
     <header class="header">
+        <!-- Navigation -->
         <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container">
                 <a class="navbar-brand" href="#"><img src="images/logo.png" alt="Logo" height="50"/></a>
@@ -19,7 +20,7 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                   <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                      <a class="nav-link" href="#">Home </a>
+                      <a class="nav-link" href="index.html">Home </a>
                     </li>
                     <li class="nav-item">
                       <a class="nav-link" href="#">About</a>
@@ -37,7 +38,9 @@
                 </div> 
             </div>
         </nav>
-
+        <!-- End of Navigation -->
+        
+        <!-- Hero box -->
         <div class="hero-box">
             <div class="hero-box__text text-center">
                 <h1 class="header-primary"> Welcome to <span class="header-primary--2">Datasights</span></h1>
@@ -49,22 +52,191 @@
                 <div class="hero-box__info">
                     Learn how it works 
                     <a class="hero-box__play" href="#">
-                      <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <svg width="34" height="34" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M3.0003 10.6148C2.90413 10.6148 2.8119 10.5766 2.7439 10.5086C2.6759 10.4406 2.6377 10.3484 2.6377 10.2522V2.27492C2.63772 2.21124 2.65452 2.1487 2.68639 2.09358C2.71826 2.03846 2.76408 1.9927 2.81925 1.96091C2.87442 1.92912 2.93698 1.91241 3.00065 1.91248C3.06433 1.91254 3.12686 1.92937 3.18196 1.96126L10.0714 5.9499C10.1264 5.98178 10.172 6.02753 10.2037 6.08257C10.2354 6.13762 10.2521 6.20003 10.2521 6.26355C10.2521 6.32708 10.2354 6.38949 10.2037 6.44453C10.172 6.49958 10.1264 6.54533 10.0714 6.57721L3.18196 10.5658C3.12678 10.5979 3.06411 10.6148 3.0003 10.6148V10.6148Z" fill="white"/>
-                      </svg>
-                        
+                      </svg>   
                     </a>                      
                 </div>
             </div>
         </div>
+        <!-- End of Hero box -->
     </header>
     <main class="main">
-        <section class="">
+      <!-- Section About -->
+        <section class="section-about">
+            <div class="container">
+                <h2 class="header-secondary"> Who we are</h2>
+                  <p class='section-about__info py-5'>
+                    Datasights Nigeria is a Nigerian based startup that offers Data Science Services and Solutions to small-scale, medium-scale and large-scale businesses, industries, and organization in the global market. We're a team of skilled Data Scientist, Data Analyst, Statisticians, and Business Analysts with many years of practical experience in cross-industry and academic backgrounds. 
+                  </p>
 
+                  <div class="row">
+                      <div class="col-md-10">
+                          <div class="row">
+                            <!-- Cards -->
+                            <div class="col-lg-6 d-flex align-items-stretch">
+                              <div class="card mb-5 mb-lg-0">
+                                <div class="card-body d-flex">
+                                  <div class="svg pr-4">
+                                    <svg width="47" height="46" viewBox="0 0 47 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <path d="M44.6583 0.00125824C35.0105 0.0101558 25.558 4.07093 18.722 11.1437L16.2913 13.5745L13.707 10.9902L6.07862 13.1434L0 19.222L5.32162 24.5438L5.32153 24.5439L5.59672 24.819L3.09346 29.9831L4.74346 31.6331L0.707667 35.669L2.61416 37.5755L6.64995 33.5397L8.60174 35.4917L0.0550927 44.0381L1.96159 45.9446L10.5082 37.3981L12.46 39.3499L8.42406 43.3858L10.3306 45.2923L14.3665 41.2564L16.0165 42.9064L21.1809 40.4032L26.7777 46L32.8558 39.9222L35.0164 32.3001L32.4253 29.7091L34.8559 27.2784C38.227 24.0291 41.021 20.0226 42.936 15.6912C46.5729 7.46583 45.9281 0.861981 46.0089 0L44.6583 0.00125824ZM7.48776 15.5472L12.9181 14.0145L14.3846 15.4809L7.22802 22.6374L3.8129 19.222L7.48776 15.5472ZM16.5666 39.6436L6.35633 29.4331L7.61475 26.8372L19.1628 38.3852L16.5666 39.6436ZM31.9907 33.0876L30.4532 38.5119L26.7777 42.1872L23.3625 38.7721L30.5187 31.6159L31.9907 33.0876ZM32.9763 25.3454L30.5189 27.8029L30.5186 27.8026L21.4561 36.8651L9.1347 24.5439C10.0431 23.6355 17.3211 16.3576 18.1978 15.481C18.4814 15.1973 17.234 16.4449 20.6533 13.0252C26.6582 6.80849 34.8388 3.10191 43.2803 2.72866C42.9074 11.1762 39.1982 19.3527 32.9763 25.3454Z" fill="#5868E8"/>
+                                      <path d="M33.0283 21.6633C35.427 19.2646 35.4289 15.3634 33.0326 12.9671C31.8736 11.8082 30.3309 11.1699 28.6884 11.1699C25.2979 11.1699 22.5417 13.9021 22.5425 17.3133C22.5429 18.9564 23.1816 20.4997 24.3409 21.659C26.7143 24.0323 30.619 24.0727 33.0283 21.6633ZM28.6884 13.8661C29.6107 13.8661 30.4765 14.2239 31.1261 14.8736C32.4711 16.2188 32.4691 18.4094 31.1218 19.7568C30.4764 20.4021 29.6126 20.7575 28.6894 20.7575C26.7602 20.7575 25.2392 19.2107 25.2387 17.3124C25.2384 16.3903 26.8 13.8661 28.6884 13.8661Z" fill="#5868E8"/>
+                                      </svg>                                      
+                                  </div>
+                                  <div class="card-info">
+                                    <h4 class="card-title">What we do</h4>
+                                    <p class="card-text"> We're passionate about evolving our clients' businesses by leveraging the potential of the continually increasing amount of data and using Data Science at the forefront of the business..</p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          <!-- End of Card -->
+
+                          <!-- Cards -->
+                          <div class="col-lg-6 d-flex align-items-stretch">
+                            <div class="card">
+                              <div class="card-body d-flex">
+                                <div class="svg pr-4">
+                                  <svg width="47" height="42" viewBox="0 0 47 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M35.2012 9.9274C35.2012 11.321 34.1865 12.1685 33.4455 12.7904C33.1649 13.026 32.6426 13.4558 32.644 13.6164C32.6491 14.2462 32.1426 14.7492 31.5125 14.7492C31.5094 14.7492 31.5062 14.7492 31.503 14.7492C30.8774 14.7492 30.3676 14.2617 30.3626 13.635C30.3526 12.3999 31.2541 11.6602 31.9786 11.0521C32.547 10.5748 32.9198 10.239 32.9198 9.9317C32.9198 9.30963 32.4136 8.8035 31.7914 8.8035C31.1689 8.8035 30.6626 9.30963 30.6626 9.9317C30.6626 10.5616 30.1519 11.0722 29.5219 11.0722C28.8918 11.0722 28.3812 10.5616 28.3812 9.9317C28.3812 8.05191 29.9109 6.52251 31.7911 6.52251C33.6715 6.52238 35.2012 8.04748 35.2012 9.9274ZM31.5346 15.802C30.9045 15.802 30.4191 16.3125 30.4191 16.9425V16.9512C30.4191 17.5811 30.9047 18.0874 31.5346 18.0874C32.1645 18.0874 32.6753 17.5724 32.6753 16.9425C32.6753 16.3125 32.1647 15.802 31.5346 15.802ZM8.54168 23.7465C7.91163 23.7465 7.40097 24.2571 7.40097 24.887C7.40097 25.517 7.91163 26.0275 8.54168 26.0275H8.63674C9.2668 26.0275 9.77746 25.517 9.77746 24.887C9.77746 24.2571 9.2668 23.7465 8.63674 23.7465H8.54168ZM12.5062 23.7465C11.8761 23.7465 11.3655 24.2571 11.3655 24.887C11.3655 25.517 11.8761 26.0275 12.5062 26.0275H12.6011C13.2312 26.0275 13.7418 25.517 13.7418 24.887C13.7418 24.2571 13.2312 23.7465 12.6011 23.7465H12.5062ZM46.0089 5.5304V18.3674C46.0089 21.4069 43.5713 23.8733 40.5313 23.8733H25.7379C25.4486 23.8733 25.2105 23.8716 25.0112 23.8674C24.8025 23.8631 24.5675 23.8615 24.4758 23.8716C24.3804 23.935 24.1464 24.1493 23.9209 24.357C23.8316 24.4392 23.7305 24.5297 23.6213 24.6293L19.4359 28.4433C19.1021 28.7479 18.6081 28.8267 18.1947 28.6445C17.7812 28.4621 17.491 28.0528 17.491 27.601V15.5096H5.54135C3.75904 15.5096 2.28143 16.9698 2.28143 18.7515V31.5886C2.28143 33.3704 3.75917 34.7713 5.54135 34.7713H22.0658C22.3503 34.7713 22.6165 34.902 22.8266 35.0938L26.2365 38.237V27.3974C26.2365 26.7675 26.7471 26.2569 27.3772 26.2569C28.0072 26.2569 28.5179 26.7675 28.5179 27.3974V40.822C28.5179 41.2738 28.2593 41.677 27.8458 41.8594C27.6979 41.9246 27.5493 41.9504 27.3938 41.9504C27.1144 41.9504 26.8389 41.8357 26.6246 41.64L21.6235 37.0522H5.54135C2.50121 37.0522 0 34.628 0 31.5885V18.7515C0 15.7121 2.50121 13.2286 5.54135 13.2286H17.491V5.5304C17.491 2.49086 20.0113 0.0495605 23.0515 0.0495605H40.5314C43.5713 0.0495605 46.0089 2.49086 46.0089 5.5304ZM43.7275 5.5304C43.7275 3.74857 42.3134 2.33055 40.5313 2.33055H23.0515C21.2693 2.33055 19.7724 3.74857 19.7724 5.5304V14.3798V25.016L22.0659 22.9438C22.1721 22.8468 22.2911 22.7581 22.3779 22.678C23.4252 21.7132 23.6932 21.5589 25.0593 21.5871C25.2456 21.591 25.4675 21.5924 25.7379 21.5924H40.5313C42.3134 21.5924 43.7275 20.1493 43.7275 18.3676V5.5304Z" fill="#5868E8"/>
+                                    </svg>                                    
+                                </div>
+                                <div class="card-info">
+                                  <h4 class="card-title">How we do it</h4>
+                                  <p class="card-text">We believe that businesses are sitting on untapped potentials, and it's our responsibility to bring about exceptional technological value.</p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <!-- End of Card -->
+                          </div>
+                      </div>
+                  </div>
+            </div>
         </section>
+      <!-- End of Section About -->
+
+      <!-- Section Meet -->
+        <section class="section-meet">
+          <div class="container">
+            <h2 class="header-secondary text-center"> Meet the Team</h2>
+            <p class="section-meet__info text-center py-5 mx-auto">
+              We work together as a team to develop and maintain stable relationship with our clients. We share knowledge amongst ourselves, and we're never scared to ask each other for assistance.
+            </p>
+            <!-- Figure -->
+            <div class="row text-center pt-5">
+              <div class="col-md-3">
+                <figure class="figure">
+                  <img src="./images/avatar-1.png" class="figure-img img-fluid rounded" alt="Avatar">
+                  <figcaption class="figure-caption text-center pt-3">
+                    <p class="figure-caption--tag">
+                      Anna Kpofiodon
+                      <span class="d-block"> Co-Founder </span>
+                    </p>
+                  </figcaption>
+                </figure>
+              </div>
+              <div class="col-md-3">
+                <figure class="figure">
+                  <img src="./images/avatar-2.png" class="figure-img img-fluid rounded" alt="Avatar">
+                  <figcaption class="figure-caption text-center pt-3">
+                    <p class="figure-caption--tag">
+                      Anna Kpofiodon
+                      <span class="d-block"> Co-Founder </span>
+                    </p>
+                  </figcaption>
+                </figure>
+              </div>
+              <div class="col-md-3">
+                <figure class="figure">
+                  <img src="./images/avatar-3.png" class="figure-img img-fluid rounded" alt="Avatar">
+                  <figcaption class="figure-caption text-center pt-3">
+                    <p class="figure-caption--tag">
+                      Anna Kpofiodon
+                      <span class="d-block"> Co-Founder </span>
+                    </p>
+                  </figcaption>
+                </figure>
+              </div>
+              <div class="col-md-3">
+                <figure class="figure">
+                  <img src="./images/avatar-4.png" class="figure-img img-fluid rounded" alt="Avatar">
+                  <figcaption class="figure-caption text-center pt-3">
+                    <p class="figure-caption--tag">
+                      Anna Kpofiodon
+                      <span class="d-block"> Co-Founder </span>
+                    </p>
+                  </figcaption>
+                </figure>
+              </div>
+            </div>
+            <!-- End of Figure -->
+          </div>
+        </section>
+      <!-- End of Section Meet -->
     </main>
     <footer class="footer">
+      <div class="container">
+        <h2 class="header-secondary text-center"> Contact us </h2>
+            <p class="footer__info text-center mx-auto">
+              If you're in search of experienced consultants for your Data Science project, or perhaps you need a Data Science training program, get in touch with us by filling out the form below. We look forward to hearing from you.
+            </p>
 
+            <!-- Footer Details -->
+              <div class="footer-details">
+                <div class="row text-center">
+                  <div class="col-md-4 mb-5 mb-lg-0">
+                    <h4>Address</h4>
+                    <p class="footer-details__address">No. 6B Zainab Street, Medina Estate, Gbagada Lagos</p>
+                  </div>
+                  <div class="col-md-4 mb-5 mb-lg-0">
+                    <h4>Phone Number</h4>
+                    <p class="footer-details__address">	&#43;2347060577846</p>
+                  </div>
+                  <div class="col-md-4 mb-5 mb-lg-0">
+                    <h4>Emaill Address</h4>
+                    <p class="footer-details__address">contact@datasights.ng</p>
+                  </div>
+                </div>
+              </div>
+            <!-- End of Footer Details -->
+
+            <!-- Footer Contact -->
+              <div class="footer-contact mt-5">
+                <div class="row text-center align-items-center justify-content-center">
+                  <div class="col-lg-7 col-md-10 mb-5 mb-lg-0">
+                    <img src="./images/map.png" class="img-fluid" alt="Responsive image">
+                  </div>
+                  <div class="col-lg-1">
+                    &nbsp;
+                  </div>
+                  <div class="col-lg-4 col-md-10 text-left">
+                    <form class="form">
+                      <div class="form-group">
+                        <label for="exampleInputEmail1" class="sr-only">Name</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                      </div>
+                      <div class="form-group">
+                        <label for="exampleInputPassword1" class="sr-only">Email</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                      </div>
+                      <div class="form-group">
+                        <label for="exampleFormControlTextarea1" class="sr-only">Message</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="4" placeholder="subject"></textarea>
+                      </div>
+                      <button type="submit" class="btn btn-primary">send message</button>
+                    </form>
+                  </div> 
+                </div>
+              </div>
+            <!-- End Footer Contact -->
+      </div>
     </footer>
+
+    <!-- Script -->
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!-- End of Script -->
 </body>
 </html>

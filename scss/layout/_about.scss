@@ -1,0 +1,22 @@
+// SECTION ABOUT
+
+.section-about{
+
+    &__info{
+        width: 60%;
+        font-size: $text-md;
+
+        
+        @include respond(phone){
+            width: 100%;
+        }
+
+        @include respond(tab-portrait){
+            width: 90%;
+        }
+
+        @include respond(tab-landscape){
+            width: 90%;
+        }
+    }
+}

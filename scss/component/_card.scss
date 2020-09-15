@@ -1,0 +1,16 @@
+// CARD 
+
+.card{
+    padding: 2rem;
+    border-radius: .8rem;
+
+    &-title{
+        font-size: $h4;
+        color: $dark;
+    }
+
+    &-text{
+        color: $dark-2;
+        font-size: $text-sm;
+    }
+}
