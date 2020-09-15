@@ -3,11 +3,13 @@ body{
 }
 
 p{
-    font-size: $text-sm;
+    font-size: $text-md;
     line-height: 1.7;
 }
 
 a{
+    color: $gray-2;
+    font-size: $text-sm;
     &:hover{
         text-decoration: none;
     }

@@ -17,7 +17,7 @@
     }
 
     &-services{
-        @include bgSection($light);
+        @include bgSection($accent);
         color: $dark
     }
 
@@ -28,7 +28,7 @@
 
     &-contact{
         @include bgSection($dark);
-        color: $white;
+        color: $light;
     }
 }
 
