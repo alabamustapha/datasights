@@ -2,42 +2,30 @@
 
 .hero-box{
     background-image: linear-gradient(0deg, rgba($white, .95), rgba($white, .95)), url('/images/hero.png');
-    height: 80vh;
+    height: 95vh;
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
     width: 100%;
 
+    @include respond(phone){
+        height: 112vh;
+    }
 
-    &__text{
-        @include absCenter;
-        display: block;
-        width: 60%;
+    p{
         font-size: $text-lg;
+        width: 85%;
+        margin: 0 auto;
 
         @include respond(phone){
-            width: 90%;
-        }
-        
-        &--sub{
-            color: $dark;
-            font-size: $text-lg;
-            font-weight: 400;
-        }
-
-        &--ctx{
-            display: block;
-            font-weight: 600;
+            width: 100%;
         }
     }
 
     &__info{
+        font-size: $text-lg;
         color: $primary;
         font-weight: 600;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-top: 6rem;
     }
 
     &__play{
