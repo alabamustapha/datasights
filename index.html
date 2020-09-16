@@ -355,18 +355,18 @@
                     </div>
                     
                     <div class="col-lg-5 col-md-6 text-left">
-                      <form class="form" method="POST">
+                      <form class="form" method="POST" id="form">
                         <div class="form-group">
                           <label for="name" class="sr-only">Name</label>
-                          <input type="name" class="form-control" id="name" name="name" aria-describedby="name" placeholder="what can we call you?">
+                          <input type="name" class="form-control" id="name" class="name" name="name" aria-describedby="name" placeholder="your name">
                         </div>
                         <div class="form-group">
                           <label for="email" class="sr-only">Email</label>
-                          <input type="email" class="form-control" id="email" name="email" placeholder="your email">
+                          <input type="email" class="form-control" id="email" class="email" name="email" placeholder="your email">
                         </div>
                         <div class="form-group">
                           <label for="Textarea" class="sr-only">Message</label>
-                          <textarea class="form-control" id="Textarea" name="message" rows="4" placeholder="subject"></textarea>
+                          <textarea class="form-control" id="messge" name="message" class="message" rows="4" placeholder="subject"></textarea>
                         </div>
                         <button type="submit" class="btn btn-primary" id="sendMessage">send message</button>
                       </form>
@@ -516,14 +516,42 @@
           player.stopVideo();
         }
 
+        const form = document.getElementById('form');
+
+
 
         $(document).ready(function(){
           $("button#sendMessage").click(function(e){
             e.preventDefault();
-          
+
+            const formattedFormData = new FormData(form);
+            postData(formattedFormData);
+
+
           })
           
         })
+
+
+        async function postData(formattedFormData){
+
+         const response = await fetch('./php/mail.php',{ method: 'POST', body: formattedFormData
+
+            }).then(function(response){
+
+              let data =  response.text();
+              console.log(data);
+
+              form.reset();
+
+            }).catch(function(error){
+
+              console.log(error);
+
+            })
+                          
+        }
+
     </script>
 </body>
 </html>

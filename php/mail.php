@@ -52,6 +52,12 @@
     
 
     function validate($name, $email, $message){
-        return true;
+
+        if($name != " " && $email != " " && $message != " "){
+            return true;
+        }
     }
+    
+
+
     
