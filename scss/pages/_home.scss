@@ -37,7 +37,7 @@
 
 .footer{
     &-nav{
-        @include bgSection($light);
+        @include bgSection($white);
         color: $dark-2;
     }
 
