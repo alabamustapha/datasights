@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DataSight</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">    
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -52,12 +53,23 @@
         
         <!-- Hero box -->
         <div class="hero-box d-flex align-items-center">
-          <div class="container text-md-center">
-            <h1 class="heading-primary">Welcome to <span> Datasights</span></h1>
-              <p class="py-5"><strong>Number One Source for Data Science Services and Solutions.</strong></br>
+          <div class="container text-md-center"
+          data-aos="fade-zoom-in"
+          data-aos-easing="ease"
+          data-aos-delay="300"
+          data-aos-duration="1500"
+          >
+            <h1 class="heading-primary " 
+            
+            >Welcome to <span> Datasights</span></h1>
+              <p class="py-5" 
+             
+              ><strong>Number One Source for Data Science Services and Solutions.</strong></br>
               At the heart of our Data Science Solution lies a powerful desire to provide precise data insights which create business values and steer business decisions.
 
-            <div class="hero-box__info mt-5">
+            <div class="hero-box__info mt-5"
+          
+            >
               Learn how it works
     
              <a href="" class="hero-box__play" data-toggle="modal" data-target="#youtubeModal">
@@ -87,8 +99,16 @@
       <!-- Section About -->
         <section class="section-about">
             <div class="container">
-                <h2 class="heading-secondary text-white"> Who we are</h2>
-                  <p class='section-about__info py-5'>
+                <h2 class="heading-secondary text-white" 
+                data-aos="fade-up"
+                data-aos-easing="ease"
+                data-aos-delay="300"
+                > Who we are</h2>
+                  <p class='section-about__info py-5'
+                  data-aos="fade-in"
+                  data-aos-easing="ease"
+                  data-aos-delay="300"
+                  >
                     Datasights Nigeria is a Nigerian based startup that offers Data Science Services and Solutions to small-scale, medium-scale and large-scale businesses, industries, and organization in the global market. We're a team of skilled Data Scientist, Data Analyst, Statisticians, and Business Analysts with many years of practical experience in cross-industry and academic backgrounds. 
                   </p>
 
@@ -96,7 +116,12 @@
                       <div class="col-md-10">
                           <div class="row">
                             <!-- Cards -->
-                            <div class="col-lg-6 d-flex align-items-stretch">
+                            <div class="col-lg-6 d-flex align-items-stretch"
+                              data-aos="fade-up"
+                              data-aos-easing="ease"
+                              data-aos-delay="500"
+                              data-aos-duration="1500"
+                              >
                               <div class="card mb-5 mb-lg-0">
                                 <div class="card-body d-flex">
                                   <div class="svg pr-4">
@@ -115,7 +140,12 @@
                           <!-- End of Card -->
 
                           <!-- Cards -->
-                          <div class="col-lg-6 d-flex align-items-stretch">
+                          <div class="col-lg-6 d-flex align-items-stretch"
+                          data-aos="fade-up"
+                          data-aos-easing="ease"
+                          data-aos-delay="500"
+                          data-aos-duration="1500"
+                          >
                             <div class="card">
                               <div class="card-body d-flex">
                                 <div class="svg pr-4">
@@ -349,10 +379,13 @@
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/venobox/1.9.1/venobox.js" integrity="sha512-QKPvFmM87WXV1NcAhp4J2Gh/cklezuYEq+l9Z0SXTwySDJYS7SzaoLjOzNlhjAWYkv6A7RU8W+93L7z+gdODYg==" crossorigin="anonymous"></script>    <!-- End of Script -->
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- custom -->
 
     <script>
 
+        // initializing wow js for scroll animation
+        AOS.init();
 
         var frameHeight = Math.round(window.screen.height * 0.5);   
         // checking window width and height and resize youtube frame
