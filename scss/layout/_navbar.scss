@@ -3,7 +3,13 @@
 .navbar{
     background-color: rgba($white, .6);
     padding: 1.5rem 0;
-    backdrop-filter: blur(18px);
+
+    -webkit-transition-backdrop-filter: blur(18px);
+    -moz-transition-backdrop-filter: blur(18px);
+    -ms-transition-backdrop-filter: blur(18px);
+    -o-transition-backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+            backdrop-filter: blur(18px);
 
     @include respond(phone){
         padding: 1.5rem 2rem;
@@ -28,6 +34,13 @@
                 font-size: $text-sm;
                 font-weight: 400;
                 // text-transform: lowercase;
+
+                -webkit-transition-transition:  all .3s linear;
+                -moz-transition-transition:  all .3s linear;
+                -ms-transition-transition:  all .3s linear;
+                -o-transition-transitionr: all .3s linear;
+                -webkit-transition:  all .3s linear;
+            
                 transition: all .3s linear;
                 position: relative;
 

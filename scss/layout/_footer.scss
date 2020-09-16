@@ -5,6 +5,13 @@
         &__icons{
             a{
                 display: inline-block;
+
+                -webkit-transition-transition:  all .3s linear;
+                -moz-transition-transition:  all .3s linear;
+                -ms-transition-transition:  all .3s linear;
+                -o-transition-transitionr: all .3s linear;
+                -webkit-transition:  all .3s linear;
+                
                 transition: all .3s linear;
                 
                 &:not(:last-child){
