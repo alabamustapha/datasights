@@ -1,21 +1,109 @@
 // SERVICES
 
 .section-services{
-    &_details{
-        width:100%;
-		margin:10px 9px 30px 0px; 
-		padding-top:50px;
+    &__details{
         position: relative;
+        padding: 3rem 0;
 
-        &::before{
+        &:before{
             content: '';
             display: block;
             position: absolute;
-            left: 0;
+            left: 50%;
             top: 0;
-            width: 3px;
-            height: 92%;
-            background: red;
+            width: 1px;
+            height: 100%;
+            background: $primary;
+
+            @include respond(tab-portrait){
+                left: 3.5%;
+            }
+            @include respond(phone){
+                left: 4%;
+            }
+        }
+    }
+
+    &__contents{
+        width: 100%;
+        
+        &-info{
+            width: 50%;
+            position: relative;
+            padding: 2rem;
+            box-shadow: $box-shadow-sm;
+            background-color: $white;
+            border-radius: 8px;
+
+            @include respond(tab-portrait){
+                width: 90%;
+                padding: 10px;
+            }
+
+        }
+
+        h4{
+            font-size: $h4;
+            font-weight: 500;
+            color: $dark;
+        }
+
+        p{
+            font-size: $text-sm;
+            font-weight: 400;
+            color: $dark-2;
+        }
+
+        
+
+        .right{
+            left: 54%;
+
+            @include respond(tab-portrait){
+                left: 10%;
+            }
+        }
+
+        .left{
+            right: 4%;
+
+            @include respond(tab-portrait){
+                left: 10%;
+            }
+        }
+    }
+
+    &__items{
+        position: relative;
+
+        &:not(:last-child){
+            margin-bottom: 5rem;
+        }
+
+        span{
+            position: absolute;
+            left: 47.8%;
+            top: 50%;
+            width: 4.5rem;
+            height: 4.5rem;
+            background-color: $accent;
+            border-radius: 100%;
+            transform: translateY(-50%);
+
+            // align text
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: $h3;
+            font-weight: 100;
+
+            @include respond(tab-portrait){
+                left: 0.7%;
+            }
+
+            @include respond(phone){
+                left: -4.3%;
+            }
         }
     }
 

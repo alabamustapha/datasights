@@ -1,0 +1,14 @@
+// MODAL
+
+.modal{
+    &-content{
+        background-color: transparent; 
+    }
+
+    &-body{
+        iframe{
+            width: 100%;
+            background-color: transparent;
+        }
+    }
+}

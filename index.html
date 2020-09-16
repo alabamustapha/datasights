@@ -1,22 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html prefix="og: https://ogp.me/ns#" lang="en">
 <head>
+
+    <!-- META -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="DataSight" />
+    <meta property="og:type" content="Data.Analysis" />
+    <meta property="og:url" content="http://www.datasights.ng/" />
+    <meta property="og:image" content="http://www.datasights.ng/images/logo.png" />
+    <meta property="og:description" content="Provide precise data insight which business value and decisions" />
+    <meta property="og:site_name" content="DataSights" />
+    <!-- End of META -->
+
     <title>DataSight</title>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">    
+    <!-- Title logo -->
+    <link rel="icon" href="./images/favicon.png" type="image/x-icon">
+
+    <!-- External css -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<style>
-  .modal-content{
-    background-color: transparent;
-  }
-  .modal-body iframe{
-    width: 100%;
-    background-color: transparent;
-  }
-</style>
 <body>
     <header class="header">
 
@@ -34,16 +39,16 @@
                       <a class="nav-link" href="index.html">Home </a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#">About</a>
+                      <a class="nav-link" href="#about">About</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#">Services</a>
+                      <a class="nav-link" href="#services">Services</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#">Meet the Team</a>
+                      <a class="nav-link" href="#meet">Meet the Team</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#">Contact</a>
+                      <a class="nav-link" href="#contact">Contact</a>
                     </li>
                   </ul>
                 </div>
@@ -73,7 +78,7 @@
               Learn how it works
     
              <a href="" class="hero-box__play" data-toggle="modal" data-target="#youtubeModal">
-              <svg width="20" height="20" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg width="28" height="28" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M3.0003 10.6148C2.90413 10.6148 2.8119 10.5766 2.7439 10.5086C2.6759 10.4406 2.6377 10.3484 2.6377 10.2522V2.27492C2.63772 2.21124 2.65452 2.1487 2.68639 2.09358C2.71826 2.03846 2.76408 1.9927 2.81925 1.96091C2.87442 1.92912 2.93698 1.91241 3.00065 1.91248C3.06433 1.91254 3.12686 1.92937 3.18196 1.96126L10.0714 5.9499C10.1264 5.98178 10.172 6.02753 10.2037 6.08257C10.2354 6.13762 10.2521 6.20003 10.2521 6.26355C10.2521 6.32708 10.2354 6.38949 10.2037 6.44453C10.172 6.49958 10.1264 6.54533 10.0714 6.57721L3.18196 10.5658C3.12678 10.5979 3.06411 10.6148 3.0003 10.6148V10.6148Z" fill="white"></path>
               </svg>
              </a>
@@ -97,7 +102,7 @@
     <main class="main">
 
       <!-- Section About -->
-        <section class="section-about">
+        <section class="section-about" id="about">
             <div class="container">
                 <h2 class="heading-secondary text-white" 
                 data-aos="fade-up"
@@ -125,7 +130,7 @@
                               <div class="card mb-5 mb-lg-0">
                                 <div class="card-body d-flex">
                                   <div class="svg pr-4">
-                                    <svg width="47" height="46" viewBox="0 0 47 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <svg width="34" height="34" viewBox="0 0 47 46" fill="none" xmlns="http://www.w3.org/2000/svg">
                                       <path d="M44.6583 0.00125824C35.0105 0.0101558 25.558 4.07093 18.722 11.1437L16.2913 13.5745L13.707 10.9902L6.07862 13.1434L0 19.222L5.32162 24.5438L5.32153 24.5439L5.59672 24.819L3.09346 29.9831L4.74346 31.6331L0.707667 35.669L2.61416 37.5755L6.64995 33.5397L8.60174 35.4917L0.0550927 44.0381L1.96159 45.9446L10.5082 37.3981L12.46 39.3499L8.42406 43.3858L10.3306 45.2923L14.3665 41.2564L16.0165 42.9064L21.1809 40.4032L26.7777 46L32.8558 39.9222L35.0164 32.3001L32.4253 29.7091L34.8559 27.2784C38.227 24.0291 41.021 20.0226 42.936 15.6912C46.5729 7.46583 45.9281 0.861981 46.0089 0L44.6583 0.00125824ZM7.48776 15.5472L12.9181 14.0145L14.3846 15.4809L7.22802 22.6374L3.8129 19.222L7.48776 15.5472ZM16.5666 39.6436L6.35633 29.4331L7.61475 26.8372L19.1628 38.3852L16.5666 39.6436ZM31.9907 33.0876L30.4532 38.5119L26.7777 42.1872L23.3625 38.7721L30.5187 31.6159L31.9907 33.0876ZM32.9763 25.3454L30.5189 27.8029L30.5186 27.8026L21.4561 36.8651L9.1347 24.5439C10.0431 23.6355 17.3211 16.3576 18.1978 15.481C18.4814 15.1973 17.234 16.4449 20.6533 13.0252C26.6582 6.80849 34.8388 3.10191 43.2803 2.72866C42.9074 11.1762 39.1982 19.3527 32.9763 25.3454Z" fill="#5868E8"/>
                                       <path d="M33.0283 21.6633C35.427 19.2646 35.4289 15.3634 33.0326 12.9671C31.8736 11.8082 30.3309 11.1699 28.6884 11.1699C25.2979 11.1699 22.5417 13.9021 22.5425 17.3133C22.5429 18.9564 23.1816 20.4997 24.3409 21.659C26.7143 24.0323 30.619 24.0727 33.0283 21.6633ZM28.6884 13.8661C29.6107 13.8661 30.4765 14.2239 31.1261 14.8736C32.4711 16.2188 32.4691 18.4094 31.1218 19.7568C30.4764 20.4021 29.6126 20.7575 28.6894 20.7575C26.7602 20.7575 25.2392 19.2107 25.2387 17.3124C25.2384 16.3903 26.8 13.8661 28.6884 13.8661Z" fill="#5868E8"/>
                                       </svg>                                      
@@ -169,29 +174,69 @@
       <!-- End of Section About -->
 
       <!-- Section Services -->
-        <section class="section-services">
+        <section class="section-services" id="services">
             <div class="container">
-              <h2 class="heading-secondary text-center"> Core services</h2>
-              <p class="section__info text-center py-5 mx-auto">At DataSights Nigeria, we care so much about efficiency and scalability as much as our clients do. Effectiveness is at the center of everything we do.</p>
+              <div
+                data-aos="fade-zoom-in"
+                data-aos-easing="ease"
+                data-aos-delay="300"
+                data-aos-duration="1500"
+              >
+
+                <h2 class="heading-secondary text-center"> Core services</h2>
+                <p class="section__info text-center py-5 mx-auto">At DataSights Nigeria, we care so much about efficiency and scalability as much as our clients do. Effectiveness is at the center of everything we do.</p>
+              </div>
               
               <!-- Timeline Content -->
               <div class="section-services__details">
-                <div class="section-services__contents">
-                  <div class="section-services__content-info">
+                <div class="section-services__contents py-5">
+                  <div class="section-services__items">
+                    <span> 01 </span>
+                  <div class="section-services__contents-info left"
+                    data-aos="fade-up"
+                    data-aos-easing="ease"
+                    data-aos-delay="300"
+                    data-aos-duration="1500"
+                  >
                     <h4>Data Preparation and Ingestion</h4>
                     <p>We use cutting-edge tools for data preparation, harmonization, and management. At DataSights Nigeria, our data ingestion service ensures that the data is gathered, imported, transferred, loaded, and processed perfectly for instant usage. The data can also be stored in a database for future use.</p>
                   </div>
-                  <div class="section-services__content-info">
+                  </div>
+                 <div class="section-services__items">
+                  <span> 02 </span>
+                  <div class="section-services__contents-info right"
+                    data-aos="fade-up"
+                    data-aos-easing="ease"
+                    data-aos-delay="300"
+                    data-aos-duration="1500"
+                  >
                     <h4>Statistical Modelling and Algorithm Development</h4>
                     <p>We leverage Data Science, Machine Learning and Statistical Methodologies or a combination of the three to create analytical models on data.</p>
                   </div>
-                  <div class="section-services__content-info">
-                    <h4>Insight Generation & Deployment</h4>
-                    <p> We take an industry-standard and professional approach to insight generation and our insight deployment service offering focuses on applying actionable business insights into decision-making process and automation.</p>
+                 </div>
+                  <div class="section-services__items">
+                    <span> 03 </span>
+                    <div class="section-services__contents-info left"
+                      data-aos="fade-up"
+                      data-aos-easing="ease"
+                      data-aos-delay="300"
+                      data-aos-duration="1500"
+                    >
+                      <h4>Insight Generation & Deployment</h4>
+                      <p> We take an industry-standard and professional approach to insight generation and our insight deployment service offering focuses on applying actionable business insights into decision-making process and automation.</p>
+                    </div>
                   </div>
-                  <div class="section-services__content-info">
-                    <h4>Data Science Training</h4>
-                    <p>We offer Data Science Training to businesses, and organizations of all kind. Don’t let buzz words overwhelm you.</p>
+                  <div class="section-services__items">
+                    <span> 04 </span>
+                    <div class="section-services__contents-info right"
+                      data-aos="fade-up"
+                      data-aos-easing="ease"
+                      data-aos-delay="300"
+                      data-aos-duration="1500"
+                    >
+                      <h4>Data Science Training</h4>
+                      <p>We offer Data Science Training to businesses, and organizations of all kind. Don’t let buzz words overwhelm you.</p>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -201,7 +246,8 @@
       <!-- End of Section Services -->
 
       <!-- Section Meet -->
-        <section class="section-meet">
+        <section class="section-meet" 
+        id="meet">
           <div class="container">
             <h2 class="heading-secondary text-center"> Meet the Team</h2>
             <p class="section__info text-center py-5 mx-auto">
@@ -209,7 +255,12 @@
             </p>
             <!-- Figure -->
             <div class="row text-center pt-5">
-              <div class="col-md-3">
+              <div class="col-md-3" 
+                data-aos="fade-zoom-in"
+                data-aos-easing="ease"
+                data-aos-delay="100"
+                data-aos-duration="1000"
+              >
                 <figure class="figure">
                   <img src="./images/olanrewaju-oyinbooke.jpg" class="figure-img img-fluid rounded" alt="Avatar">
                   <figcaption class="figure-caption text-center pt-3">
@@ -220,7 +271,12 @@
                   </figcaption>
                 </figure>
               </div>
-              <div class="col-md-3">
+              <div class="col-md-3"
+                data-aos="fade-zoom-in"
+                data-aos-easing="ease"
+                data-aos-delay="200"
+                data-aos-duration="1000"
+              >
                 <figure class="figure">
                   <img src="./images/ismail-saka.jpg" class="figure-img img-fluid rounded" alt="Avatar">
                   <figcaption class="figure-caption text-center pt-3">
@@ -231,7 +287,12 @@
                   </figcaption>
                 </figure>
               </div>
-              <div class="col-md-3">
+              <div class="col-md-3"
+              data-aos="fade-zoom-in"
+              data-aos-easing="ease"
+              data-aos-delay="300"
+              data-aos-duration="1000"
+              >
                 <figure class="figure">
                   <img src="./images/adeyemi-taiwo.jpg" class="figure-img img-fluid rounded" alt="Avatar">
                   <figcaption class="figure-caption text-center pt-3">
@@ -242,7 +303,12 @@
                   </figcaption>
                 </figure>
               </div>
-              <div class="col-md-3">
+              <div class="col-md-3"
+                data-aos="fade-zoom-in"
+                data-aos-easing="ease"
+                data-aos-delay="400"
+                data-aos-duration="1000"
+              >
                 <figure class="figure">
                   <img src="./images/ridwan-abdulmumeen.jpg" class="figure-img img-fluid rounded" alt="Avatar">
                   <figcaption class="figure-caption text-center pt-3">
@@ -260,7 +326,7 @@
       <!-- End of Section Meet -->
 
       <!-- Section Contact -->
-      <section class="section-contact">
+      <section class="section-contact" id="contact">
         <div class="container">
           <h2 class="heading-secondary text-center text-white"> Contact us </h2>
               <p class="section-contact__info text-center mx-auto">
@@ -290,7 +356,7 @@
                 <div class="section-contact__form mt-5">
                   <div class="row text-center align-items-center justify-content-center">
                     <div class="col-lg-7 col-md-6 mb-5 mb-lg-0 map">
-                      <iframe class="w-100 h-100" src="https://maps.google.com/maps?q=6b%20zainab%20street%2C%20gbagada%20&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=&amp;output=embed" style="border:0" allowfullscreen="" frameborder="0"></iframe>
+                      <iframe class="w-100" src="https://maps.google.com/maps?q=6b%20zainab%20street%2C%20gbagada%20&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=&amp;output=embed" style="border:0" allowfullscreen="" frameborder="0"></iframe>
                     </div>
                     
                     <div class="col-lg-5 col-md-6 text-left">
@@ -328,17 +394,23 @@
               <a class="navbar-brand" href="#"><img src="images/logo.png" alt="Logo" height="40"/></a>
               <p class="py-5"> We understand the science and art of data, and we can help you make the best out of it. Get in touch with us today.</p>
               <div class="footer-nav__icons">
-                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M10.001 0.00195312C4.47895 0.00195312 0.00195312 4.47895 0.00195312 10.001C0.00195312 14.991 3.65795 19.127 8.43895 19.88V12.892H5.89895V10.001H8.43895V7.79795C8.43895 5.28995 9.93195 3.90695 12.215 3.90695C13.309 3.90695 14.455 4.10195 14.455 4.10195V6.56095H13.191C11.951 6.56095 11.563 7.33295 11.563 8.12395V9.99895H14.334L13.891 12.89H11.563V19.878C16.344 19.129 20 14.992 20 10.001C20 4.47895 15.523 0.00195312 10.001 0.00195312Z" fill="#9E9E9E"/>
+                <a href="#">
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10.001 0.00195312C4.47895 0.00195312 0.00195312 4.47895 0.00195312 10.001C0.00195312 14.991 3.65795 19.127 8.43895 19.88V12.892H5.89895V10.001H8.43895V7.79795C8.43895 5.28995 9.93195 3.90695 12.215 3.90695C13.309 3.90695 14.455 4.10195 14.455 4.10195V6.56095H13.191C11.951 6.56095 11.563 7.33295 11.563 8.12395V9.99895H14.334L13.891 12.89H11.563V19.878C16.344 19.129 20 14.992 20 10.001C20 4.47895 15.523 0.00195312 10.001 0.00195312Z" fill="#9E9E9E"/>
                   </svg>
+                </a>
                   
+                <a href="#">
                   <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M10.0001 6.87579C8.2798 6.87579 6.87589 8.2797 6.87589 10C6.87589 11.7203 8.2798 13.1242 10.0001 13.1242C11.7204 13.1242 13.1243 11.7203 13.1243 10C13.1243 8.2797 11.7204 6.87579 10.0001 6.87579ZM19.3704 10C19.3704 8.70626 19.3821 7.42423 19.3095 6.13283C19.2368 4.63283 18.8946 3.30158 17.7978 2.2047C16.6985 1.10548 15.3696 0.765639 13.8696 0.692982C12.5759 0.620326 11.2939 0.632045 10.0025 0.632045C8.7087 0.632045 7.42667 0.620326 6.13527 0.692982C4.63527 0.765639 3.30402 1.10783 2.20714 2.2047C1.10792 3.30392 0.76808 4.63283 0.695424 6.13283C0.622767 7.42658 0.634486 8.70861 0.634486 10C0.634486 11.2914 0.622767 12.5758 0.695424 13.8672C0.76808 15.3672 1.11027 16.6985 2.20714 17.7953C3.30636 18.8945 4.63527 19.2344 6.13527 19.307C7.42902 19.3797 8.71105 19.368 10.0025 19.368C11.2962 19.368 12.5782 19.3797 13.8696 19.307C15.3696 19.2344 16.7009 18.8922 17.7978 17.7953C18.897 16.6961 19.2368 15.3672 19.3095 13.8672C19.3845 12.5758 19.3704 11.2938 19.3704 10ZM10.0001 14.807C7.33995 14.807 5.19308 12.6602 5.19308 10C5.19308 7.33986 7.33995 5.19298 10.0001 5.19298C12.6603 5.19298 14.8071 7.33986 14.8071 10C14.8071 12.6602 12.6603 14.807 10.0001 14.807ZM15.004 6.11876C14.3829 6.11876 13.8814 5.6172 13.8814 4.99611C13.8814 4.37501 14.3829 3.87345 15.004 3.87345C15.6251 3.87345 16.1267 4.37501 16.1267 4.99611C16.1269 5.14359 16.0979 5.28966 16.0416 5.42595C15.9852 5.56224 15.9026 5.68607 15.7983 5.79036C15.694 5.89464 15.5701 5.97733 15.4339 6.03368C15.2976 6.09004 15.1515 6.11895 15.004 6.11876Z" fill="#9E9E9E"/>
                   </svg>
+                </a>
 
+                <a href="#">
                   <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M10.9906 0.788575C5.19453 0.786231 0.5 5.47842 0.5 11.2698C0.5 15.8495 3.43672 19.7425 7.52656 21.1722C8.07734 21.3105 7.99297 20.919 7.99297 20.6519V18.8355C4.8125 19.2081 4.68359 17.1034 4.47031 16.7519C4.03906 16.0159 3.01953 15.8284 3.32422 15.4769C4.04844 15.1042 4.78672 15.5706 5.64219 16.8339C6.26094 17.7503 7.46797 17.5956 8.07969 17.4433C8.21328 16.8925 8.49922 16.4003 8.89297 16.0183C5.59766 15.4276 4.22422 13.4167 4.22422 11.0261C4.22422 9.86592 4.60625 8.79951 5.35625 7.93936C4.87812 6.52139 5.40078 5.30732 5.47109 5.12686C6.83281 5.00498 8.24844 6.10186 8.35859 6.18858C9.13203 5.97998 10.0156 5.86983 11.0047 5.86983C11.9984 5.86983 12.8844 5.98467 13.6648 6.19561C13.9297 5.99404 15.2422 5.05186 16.5078 5.1667C16.5758 5.34717 17.0867 6.53311 16.6367 7.93233C17.3961 8.79483 17.7828 9.87061 17.7828 11.0331C17.7828 13.4284 16.4 15.4417 13.0953 16.023C13.3784 16.3013 13.6031 16.6333 13.7564 16.9995C13.9098 17.3657 13.9886 17.7588 13.9883 18.1558V20.7925C14.007 21.0034 13.9883 21.212 14.3398 21.212C18.4906 19.8128 21.4789 15.8917 21.4789 11.2722C21.4789 5.47842 16.782 0.788575 10.9906 0.788575Z" fill="#9E9E9E"/>
                   </svg>
+                </a>
                       
               </div>
             </div>
@@ -348,16 +420,16 @@
                   <a class="nav-link" href="index.html">Home </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">About</a>
+                  <a class="nav-link" href="#about">About</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Services</a>
+                  <a class="nav-link" href="#services">Services</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Meet the Team</a>
+                  <a class="nav-link" href="#meet">Meet the Team</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Contact</a>
+                  <a class="nav-link" href="#contact">Contact</a>
                 </li>
               </ul>
             </div>
